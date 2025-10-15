@@ -1,0 +1,178 @@
+Работа с классами в Python:
+
+### Основы классов
+
+Классы в Python - это шаблоны для создания объектов. Они определяют структуру и поведение объекта.
+
+```python
+class MyClass:
+    def __init__(self):
+        self.attribute = "значение"
+
+    def method(self):
+        return f"Это метод возвращающий значение{self.attribute}"
+```
+
+### Атрибуты класса
+
+Атрибуты класса - это данные, которые хранятся внутри объекта или класса.
+
+- Инстанс-атрибуты (атрибуты экземпляра) создаются при инициализации объекта:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person = Person("Иван", 30)
+print(person.name)  # Выведет: Иван
+```
+
+- Класс-атрибуты (статические атрибуты) принадлежат самому классу:
+
+```python
+class Car:
+    wheels = 4
+
+    def __init__(self, brand):
+        self.brand = brand
+
+print(Car.wheels)  # Выведет: 4
+```
+
+### Методы класса
+
+Методы - это функции, определенные внутри класса.
+
+- Обычные методы принимают `self` в качестве первого аргумента:
+
+```python
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+rect = Rectangle(5, 10)
+print(rect.area())  # Выведет: 50
+```
+
+- Статические методы не имеют доступа к атрибутам класса или экземпляра:
+
+```python
+class MathUtils:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+result = MathUtils.add(5, 10)
+print(result)  # Выведет: 15
+```
+
+- Методы класса имеют доступ к атрибутам класса:
+
+```python
+class Counter:
+    count = 0
+
+    def __init__(self):
+        self.__class__.count += 1
+
+    @classmethod
+    def get_count(cls):
+        return cls.count
+
+Counter()
+Counter()
+print(Counter.get_count())  # Выведет: 2
+```
+
+### Наследование
+
+Наследование позволяет создавать новые классы на основе существующих.
+
+```python
+class Animal:
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def sound(self):
+        return "Гав-гав!"
+
+dog = Dog()
+print(dog.sound())  # Выведет: Гав-гав!
+```
+
+### Полиморфизм
+
+Полиморфизм позволяет использовать объекты разных классов одинаково.
+
+```python
+class Shape:
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+shapes = [Circle(5), Rectangle(3, 4)]
+for shape in shapes:
+    print(shape.area())
+```
+
+### Инкапсуляция
+
+Инкапсуляция - это принцип сокрытия внутренней реализации объекта.
+
+```python
+class BankAccount:
+    def __init__(self, balance=0):
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount(100)
+account.deposit(50)
+print(account.get_balance())  # Выведет: 150
+```
+
+### Магические методы
+
+Магические методы (dunder methods) используются для переопределения стандартного поведения объектов.
+
+```python
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+
+v1 = Vector(2, 3)
+v2 = Vector(4, 5)
+result = v1 + v2
+print(result.x, result.y)  # Выведет: 6 8
+```
+
+Этот руководство охватывает основные аспекты работы с классами в Python, включая определение атрибутов и методов, наследование, полиморфизм, инкапсуляцию и использование магических методов. Понимание этих концепций поможет вам эффективно использовать объектно-ориентированное программирование в Python.
