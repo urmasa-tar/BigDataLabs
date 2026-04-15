@@ -1,0 +1,5 @@
+https://mukulrathi.com/demystifying-deep-learning/feed-forward-neural-network/
+https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%B3%D0%BC%D0%BE%D0%B8%D0%B4%D0%B0
+https://www.researchgate.net/figure/Example-loss-curve-plot-of-a-neural-network-showing-model-performance-loss-evaluated_fig4_341188600
+https://en.wikipedia.org/wiki/Activation_function
+https://robotdreams.cc/blog/331-gradiyentniy-spusk-algoritm-ta-priklad-na-python

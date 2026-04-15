@@ -1,0 +1,8 @@
+Механизм внимания и архитектура "Трансформер"
+Выполнить следующие туториалы:
+
+1) Модель переводчика (Sequence to Sequence) с помощью фреймворка pytorch: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+
+2) Модель переводчика (Sequence to Sequence) с помощью фреймворка pytorch: https://www.tensorflow.org/text/tutorials/nmt_with_attention
+
+3) Эксперименты с механизмом внимания: https://github.com/sainathadapa/attention-primer-pytorch?ysclid=m8i9cyfg10356992158

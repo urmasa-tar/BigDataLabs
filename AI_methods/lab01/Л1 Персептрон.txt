@@ -1,0 +1,13 @@
+Создание и обучение персептрона
+
+Запустить данные тутуориалы в виде записных книжек Jupyter, предварительно установив необходимые библиотеки в среду conda:
+
+1) Создание и обучение персептрона без специализированных фреймворков: 
+https://www.sharpsightlabs.com/blog/python-perceptron-from-scratch/
+https://github.com/gdeol4/Perceptron-from-scratch/blob/master/Perceptron%20learning.ipynb
+
+2) Создание и обучение персептрона с помощью Pytorch: 
+https://github.com/christianversloot/machine-learning-articles/blob/main/creating-a-multilayer-perceptron-with-pytorch-and-lightning.md
+
+3) Создание и обучение персептрона с помощью Tensorflow: 
+https://www.tensorflow.org/guide/core/mlp_core

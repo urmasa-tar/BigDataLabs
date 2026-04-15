@@ -1,0 +1,11 @@
+﻿Ознакомиться, реализовать и обучить рекуррентные нейронные сети
+
+1) "С нуля": https://www.kaggle.com/code/fareselmenshawii/rnn-from-scratch/notebook
+
+2) Pytorch рекуррентная нейронная сеть для классификации: https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
+
+3) Pytorch рекуррентная нейронная сеть для генерации текста: https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html
+
+4) Tensorflow рекуррентная нейронная сеть для классификации: https://www.tensorflow.org/text/tutorials/text_classification_rnn
+
+5) Tensorflow рекуррентная нейронная сеть для генерации текста: https://www.tensorflow.org/text/tutorials/text_generation

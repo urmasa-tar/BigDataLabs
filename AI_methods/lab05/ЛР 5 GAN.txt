@@ -1,0 +1,5 @@
+Генеративно-состязательные сети, выполнить туториалы:
+
+1) https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+
+2) https://www.tensorflow.org/tutorials/generative/dcgan

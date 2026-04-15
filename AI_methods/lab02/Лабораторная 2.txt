@@ -1,0 +1,7 @@
+Ознакомится на практике с принципами работы сверточных нейронных сетей и методами их создания с нуля с помощью (теория: https://neurohive.io/ru/tutorial/cnn-na-pytorch/):
+
+1) Базовых средств Python и библиотеки Numpy: https://www.pycodemates.com/2023/07/build-a-cnn-from-scratch-using-python.html
+
+2) Pytorch: https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
+
+3) TensorFlow: https://www.tensorflow.org/tutorials/images/cnn?hl=ru

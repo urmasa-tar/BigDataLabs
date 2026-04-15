@@ -1,0 +1,14 @@
+build_lama:
+	cd llama.cpp
+	cmake -B build
+	cmake --build build --config Release
+	cd ..
+
+mainRun : main.o
+	g++ main.o -o mainRun
+
+main.o : main.cpp
+	g++ -c main.cpp -o main.o
+
+clean :
+	rm -rf *.o

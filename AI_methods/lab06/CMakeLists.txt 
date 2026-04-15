@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.14)
+project(gguf_inference)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Добавляем папку с llama.cpp как подпроект
+add_subdirectory(llama.cpp)
+
+# Создаем исполняемый файл из нашего кода
+add_executable(my_llama main.cpp)
+
+# Линкуем нашу программу с библиотеками llama.cpp
+target_link_libraries(my_llama
+    PRIVATE
+        llama
+        common # Содержит вспомогательные функции
+        ggml   # Основной тензорный движок
+)

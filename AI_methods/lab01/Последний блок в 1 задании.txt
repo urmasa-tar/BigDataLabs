@@ -1,0 +1,19 @@
+#after a few trial and error runs I stuck to these parameter values
+perceptron_model = Perceptron(learning_rate = 0.25, epochs = 30)
+x2 = np.array([str(val) for val in x2.flatten()]).reshape(x2.shape)
+x2 = np.array([float(val.replace(',', '.')) if isinstance(val, str) and ',' in val else float(val) for val in x2.flatten()]).reshape(x2.shape)
+print(x2.dtype)
+#training the model
+perceptron_model.fit(x2, y_train)
+
+#modules needed for plotting the updates over epochs
+import matplotlib as plt
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+#plotting the number of updates over epochs
+plt.plot(range(1, len(perceptron_model.errors) + 1), perceptron_model.errors, marker='o')
+plt.xlabel('Epochs')
+plt.ylabel('Number of updates')
+
+plt.show()
